@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script>
+        //変数storageにsessionStorageを格納
+        var storage = localStorage;
+        //データを保存する
+        function set() {
+          var element = document.getElementById( "drop" ) ;
+          var numberOfPerson = element.value;
+          storage.setItem("numberOfPerson",numberOfPerson);
+          location.href='config.html';
+        }
+</script>
+
+<title>configuration</title>
+</head>
+<body>
+    <div id='numberOfPersons'>
+        人数
+        <form name="numberOfPersonsForm">
+            <select id="drop">
+                <option value="1"/>1人</option>
+                <option value="2"/>2人</option>
+                <option value="3"/>3人</option>
+                <option value="4"/>4人</option>
+                <option value="5"/>5人</option>
+                
+                <input type="button" value="決定" onClick="set()">
+            </select>
+        </form>
+    </div>
+    
+</body>
+</html>

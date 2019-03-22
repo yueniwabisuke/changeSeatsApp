@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script>
+    var nameList = localStorage.getItem("nameList");
+    var sexList = localStorage.getItem("sexList");
+
+    //配列にする
+    var nameListArray = String(nameList).split(',')
+    var sexListArray = String(sexList).split(',')
+
+    console.log(nameListArray);
+    console.log(sexListArray);
+    console.log(nameListArray[0]);
+    console.log(sexListArray[0]);
+</script>
+
+<title>result</title>
+</head>
+<body>
+
+</body>
+</html>
