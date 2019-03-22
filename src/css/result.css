@@ -1,0 +1,34 @@
+.box {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  text-align: center;
+  position: absolute;
+}
+
+.table {
+  width: 200px;
+  height: 100%;
+  left: 150px;
+  border: 1px solid #000;
+  position: absolute;
+  background-color: rgba(49, 23, 1, 0.623);
+  z-index: 1;
+}
+
+.draggable {
+  z-index: 2;
+  background-color: rgb(246, 180, 255);
+}
+
+.snaptarget {
+  background-color: azure;
+}
+
+.field {
+  height: 500px;
+  width: 500px;
+  position: relative;
+  background-color: antiquewhite;
+  margin: 20px 0px;
+}

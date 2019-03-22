@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
+    
 <head>
-<meta charset="utf-8">
-<script>
-    var nameList = localStorage.getItem("nameList");
-    var sexList = localStorage.getItem("sexList");
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/result.css">
+<!-- <script>
+  var nameList = localStorage.getItem("nameList");
+  var sexList = localStorage.getItem("sexList");
 
-    //配列にする
-    var nameListArray = String(nameList).split(',')
-    var sexListArray = String(sexList).split(',')
+  //配列にする
+  var nameListArray = String(nameList).split(',')
+  var sexListArray = String(sexList).split(',')
 
-    console.log(nameListArray);
-    console.log(sexListArray);
-    console.log(nameListArray[0]);
-    console.log(sexListArray[0]);
-</script>
+  console.log(nameListArray);
+  console.log(sexListArray);
+  console.log(nameListArray[0]);
+  console.log(sexListArray[0]);
+</script> -->
 
 <title>result</title>
 </head>
 <body>
-
+    <div class="field">
+      <div class="table"></div>
+      <script src="./js/change_seat.js"></script>
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/draggable.js"></script>
 </body>
 </html>
