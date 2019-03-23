@@ -1,4 +1,14 @@
 {
+  function shuffle(array){
+    let n = array.length, t, i;
+    while(n){
+      i = Math.floor(Math.random() * n--);
+      t = array[n];
+      array[n] = array[i];
+      array[i] = t;
+    }
+  }
+  
   function replace_array(nameListArray, sexListArray) {
     const mens = nameListArray.filter(function(value,index){
       return this[index] == 'male'
@@ -6,6 +16,8 @@
     const womens = nameListArray.filter(function(value,index){
       return this[index] == 'female'
     }, sexListArray);
+    shuffle(mens);
+    shuffle(womens);
 
     const [l,s] = mens.length >= womens.length ? [mens, womens] : [womens, mens];
     const interval = Math.floor(l.length / s.length);
@@ -25,14 +37,10 @@
   const members = replace_array(nameListArray, sexListArray);
 
   const middle_index = Math.ceil(members.length/2);
-  members.forEach((name, index) => {
-    if (index < middle_index){
-      document.write('<div class="draggable box" style="left:40px; top:' + String((index) * 100) + 'px;">'+name+'</div>');
-      document.write('<div class="snaptarget box" style="left:40px; top:' + String((index) * 100) + 'px;"></div>');
-    }else{
-      document.write('<div class="draggable box" style="left:380px; top:' + String((index-middle_index) * 100) + 'px;">'+name+'</div>');
-      document.write('<div class="snaptarget box" style="left:380px; top:' + String((index-middle_index) * 100) + 'px;"></div>');
-    }
+  members.forEach((name, genuine_index) => {
+    let [index, left] = genuine_index < middle_index ? [genuine_index, '40px'] : [genuine_index-middle_index, '380px'];
+    document.write(`<div class="draggable box" style="left:${left}; top:${index*100}px;">${name}</div>`);
+    document.write(`<div class="snaptarget box" style="left:${left}; top:${index*100}px;"></div>`);
   });
   
   const field = document.getElementsByClassName("field");
