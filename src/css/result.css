@@ -1,9 +1,17 @@
+body {
+	background-color:antiquewhite;
+}
+
 .box {
   width: 80px;
   height: 80px;
   border: 1px solid #000;
   text-align: center;
   position: absolute;
+ 
+  border-radius: 80px;
+  height: 80px;
+  width: 80px;
 }
 
 .table {
@@ -14,6 +22,7 @@
   position: absolute;
   background-color: rgba(49, 23, 1, 0.623);
   z-index: 1;
+  top: 50px;
 }
 
 .draggable {
@@ -31,4 +40,9 @@
   position: relative;
   background-color: antiquewhite;
   margin: 20px 0px;
+}
+
+.update{
+  text-align : center ;
+
 }

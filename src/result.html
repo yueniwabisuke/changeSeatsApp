@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta content="86400" http-equiv="Expires"/>
   <link rel="stylesheet" type="text/css" href="./css/result.css">
   <!-- <script>
   var nameList = localStorage.getItem("nameList");
@@ -17,11 +18,18 @@
   console.log(nameListArray[0]);
   console.log(sexListArray[0]);
   </script> -->
+  <script>
+      function update(){
+        location.reload();
+      }
+      </script>
   <title>result</title>
 </head>
 
 <body>
   <div class="field">
+    <div class="update"> <input type="button" value="席替え" onclick="update()"></div>
+    <!--<A HREF="javaScript:history.back();">前のページへ</A> -->
     <div class="table"></div>
     <script src="./js/result.js"></script>
   </div>
@@ -30,6 +38,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="./js/draggable.js"></script>
+
 </body>
 
 </html>
