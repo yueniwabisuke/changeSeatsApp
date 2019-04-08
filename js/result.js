@@ -40,30 +40,26 @@
   const sexListArray = String(localStorage.getItem("sexList")).split(',')
   const [members,sex] = replace_array(nameListArray, sexListArray);
   const middle_index = Math.ceil(members.length/2);
-  let sexIndex=0;
+  
   members.forEach((name, genuine_index) => {
-    let [index, left] = genuine_index < middle_index ? [genuine_index, '40px'] : [genuine_index-middle_index, '380px'];
-    if(sex[sexIndex] == 0){
-      document.write(`<div class="draggable box" 
-                      style="left:${left};
-                      top:${index*100}px;
-                      background-color:deepskyblue;
-                      display: flex; 
-                      align-items:center; 
-                      justify-content:center;
-                      font-weight:bolder;" >${name}</div>`);
-                      
+    let [index, left] = genuine_index < middle_index ?
+        [genuine_index, '40px'] : [genuine_index-middle_index, '380px'];
+
+    document.write(`<div class="draggable box" 
+                        style="left:${left}; top:${index*100}px;">
+                    ${name}</div>`);
+
+    const draggable_boxes = document.getElementsByClassName("draggable box");
+    
+    // sex=0ならdeepskyblue，1ならviolet
+    if(sex[genuine_index] == 0){ 
+      draggable_boxes[draggable_boxes.length-1].style.backgroundColor
+        = 'deepskyblue';
     }else{
-      document.write(`<div class="draggable box" 
-                      style="left:${left}; 
-                      top:${index*100}px; 
-                      background-color:violet; 
-                      display: flex; 
-                      align-items: center; 
-                      justify-content: center;
-                      font-weight:bolder;" >${name}</div>`);
+      draggable_boxes[draggable_boxes.length-1].style.backgroundColor
+        = 'violet';
     }
-    sexIndex = sexIndex+1;
+
     document.write(`<div class="snaptarget box" style="left:${left}; top:${index*100}px; "></div>`);
   });
   

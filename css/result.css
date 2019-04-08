@@ -11,7 +11,12 @@ body {
  
   border-radius: 80px;
   height: 80px;
-  width: 80px;
+  width: 80px; 
+  
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-weight:bolder;
 }
 
 .table {
