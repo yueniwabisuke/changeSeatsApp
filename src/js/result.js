@@ -46,7 +46,7 @@
     if(sex[sexIndex] == 0){
       document.write(`<div class="draggable box" 
                       style="left:${left};
-                      top:${index*100+50}px;
+                      top:${index*100}px;
                       background-color:deepskyblue;
                       display: flex; 
                       align-items:center; 
@@ -56,7 +56,7 @@
     }else{
       document.write(`<div class="draggable box" 
                       style="left:${left}; 
-                      top:${index*100+50}px; 
+                      top:${index*100}px; 
                       background-color:violet; 
                       display: flex; 
                       align-items: center; 
@@ -64,7 +64,7 @@
                       font-weight:bolder;" >${name}</div>`);
     }
     sexIndex = sexIndex+1;
-    document.write(`<div class="snaptarget box" style="left:${left}; top:${index*100+50}px; "></div>`);
+    document.write(`<div class="snaptarget box" style="left:${left}; top:${index*100}px; "></div>`);
   });
   
   const field = document.getElementsByClassName("field");
