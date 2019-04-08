@@ -18,17 +18,18 @@
     }, sexListArray);
     shuffle(mens);
     shuffle(womens);
-
-    const [l,s] = mens.length >= womens.length ? [mens, womens] : [womens, mens];
-    const interval = Math.floor(l.length / s.length);
+    
+    const [l,s, n0, n1] = mens.length >= womens.length ? [mens, womens, 0,1] : [womens, mens, 1,0];  // long,shortを決定（男女関係なく）
+    const interval = Math.floor(l.length / s.length);  // longとshortのintervalを決定
     const array = [];
     const arraySex = [];
+
     for(let i=0; i<l.length; i++){
       array.push(l[i]);
-      arraySex.push(0);
-      if(i % interval == 0 && s[i]){
-        array.push(s[i]);
-        arraySex.push(1);
+      arraySex.push(n0);
+      if(i % interval == 0 && s[i / interval]){
+        array.push(s[i / interval]);
+        arraySex.push(n1);
       }
     }
     return [array,arraySex]
