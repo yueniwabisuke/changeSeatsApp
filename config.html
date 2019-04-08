@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset='utf-8'>
+    <meta content="86400" http-equiv="Expires"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nameList=[];
+        var sexList=[];
+        var numberOfPerson = localStorage.getItem("numberOfPerson");
+
+        $("#send").click(function() {
+            for(var i=0; i<numberOfPerson; i++){
+                nameList.push( $("#textbox_" + String(i)).val() );
+                sexList.push( $("[name=name_" + String(i)  + "]" + ":checked").val() );
+                //sexList.push( $("#sex_" + String(i)).val() );
+            }
+            localStorage.setItem("nameList",nameList);
+            localStorage.setItem("sexList",sexList);
+            location.href='result.html';
+        });
+    });
+</script>
+    <title>設定画面</title>
+</head>
+<body>
+
+    名前/性別
+    <div id="displayArea">
+            <!--  ここに出力  -->
+    </div>
+    
+    <button type="submit" id="send">決定</button>
+    <script>
+        $('form').submit(function() {
+            console.log("送信しました")
+        });
+    </script>
+    <div id="templateForm" class="NotDisp">
+        <input type="text" name="templateTextbox"> 
+        <input type="radio" name="sex" value="male">男
+        <input type="radio" name="sex" value="female">女
+        <span class="dispInfo"></span>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/config.js"></script>
+</body>
+</html>
