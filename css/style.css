@@ -1,4 +1,18 @@
-.midasi{
+body{
+	background-color: antiquewhite;
+}
+
+#numberOfPersons{
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 30px;
+}
+
+#drop{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#buttonId{
+	font-weight: bold;
+	font-size: 30px;
 }

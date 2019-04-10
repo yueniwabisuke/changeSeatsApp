@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta content="86400" http-equiv="Expires"/>
+    <link rel="stylesheet" type="text/css" href="./css/config.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
     <script type="text/javascript">
@@ -26,8 +27,6 @@
     <title>設定画面</title>
 </head>
 <body>
-
-    名前/性別
     <div id="displayArea">
             <!--  ここに出力  -->
     </div>
@@ -40,8 +39,20 @@
     </script>
     <div id="templateForm" class="NotDisp">
         <input type="text" name="templateTextbox"> 
-        <input type="radio" name="sex" value="male">男
-        <input type="radio" name="sex" value="female">女
+        <div class="sample">
+            <label>
+                <input type="radio" name="sex" value="male" checked="">
+                <div class="switch-on">
+                    男
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="sex" value="female">
+                <div class="switch-off">
+                    女
+                </div>
+            </label>
+        </div>
         <span class="dispInfo"></span>
     </div>
     <script src="js/config.js"></script>
