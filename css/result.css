@@ -2,6 +2,36 @@ body {
 	background-color:antiquewhite;
 }
 
+/* ボタンのスタイル */
+.button {
+  width: 10%;
+  position: relative;
+  top:-20px;
+  left: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  background-color: gray;
+
+}
+/* マウスオーバー時のカラー */
+.button:hover {
+  border: 1px solid #b97ebb;
+  background-color: #b97ebb;
+} 
+/* リンク領域のスタイル */
+.button-a {
+  display: block;
+  padding: 7px 0;
+  text-align: center;
+  color: #fff;
+
+}
+/* マウスホバー時のカラー*/
+.button-a:hover {
+  color: #fff;
+}
+
 .box {
   width: 80px;
   height: 80px;
