@@ -5,7 +5,11 @@
     <meta content="86400" http-equiv="Expires"/>
     <link rel="stylesheet" type="text/css" href="./css/config.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+    <script>
+        localStorage.removeItem("nameList");
+        localStorage.removeItem("sexList")        
+    </script>   
     <script type="text/javascript">
     $(function() {
         var nameList=[];
@@ -23,7 +27,7 @@
             location.href='result.html';
         });
     });
-</script>
+    </script>
     <title>設定画面</title>
 </head>
 <body>
