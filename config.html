@@ -31,11 +31,12 @@
     <title>設定画面</title>
 </head>
 <body>
-    <div id="displayArea">
-            <!--  ここに出力  -->
+    <div class="form">
+        <div id="displayArea">
+                <!--  ここに出力  -->
+        </div>
+        <button type="submit" id="send">決定</button>
     </div>
-    
-    <button type="submit" id="send">決定</button>
     <script>
         $('form').submit(function() {
             console.log("送信しました")

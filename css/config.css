@@ -2,8 +2,17 @@ body{
 	background-color: antiquewhite;
 }
 
-#displayArea{
+.form{
     font-size: 30px;
+    position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+
+	width: 128px;
+	height: 64px;
 }
 
 #send{

@@ -2,6 +2,14 @@ body {
 	background-color:antiquewhite;
 }
 
+#all{
+  position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+}
 /* ボタンのスタイル */
 .button {
   width: 10%;
