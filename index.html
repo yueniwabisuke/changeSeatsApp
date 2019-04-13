@@ -6,13 +6,23 @@
 <script>
         //変数storageにsessionStorageを格納
         var storage = localStorage;
+
         //データを保存する
         function set() {
-          var element = document.getElementById( "drop" ) ;
-          var numberOfPerson = element.value;
-          storage.setItem("numberOfPerson",numberOfPerson);
+          var radios = document.getElementsByName( "foo" ) ;
+          var result;
+          for(var i=0; i<radios.length; i++){
+            if (radios[i].checked) {
+                //選択されたラジオボタンのvalue値を取得する
+                result = radios[i].value;
+                break;
+                }
+            }
+          //var numberOfPerson = element.value;
+          storage.setItem("numberOfPerson",result);
           location.href='config.html';
         }
+
 </script>
 
 <title>configuration</title>
@@ -20,43 +30,15 @@
 <body>
     <div id='numberOfPersons'>
         人数
-        <!--
-        <script>
-            for(var i=0; i<10; i++){
-                document.write(`<a href="#" class="btn-square">BUTTON</a>`);
-            }
-        </script>
-        -->
-        <form name="numberOfPersonsForm">
-            <select id="drop">
-                <script>
-                    for
-                </script>
-                <option value="1"/>1人</option>
-                <option value="2"/>2人</option>
-                <option value="3"/>3人</option>
-                <option value="4"/>4人</option>
-                <option value="5"/>5人</option>
-                <option value="6"/>6人</option>
-                <option value="7"/>7人</option>
-                <option value="8"/>8人</option>
-                <option value="9"/>9人</option>
-                <option value="10"/>10人</option>
-                <option value="11"/>11人</option>
-                <option value="12"/>12人</option>
-                <option value="13"/>13人</option>
-                <option value="14"/>14人</option>
-                <option value="15"/>15人</option>
-                <option value="16"/>16人</option>
-                <option value="17"/>17人</option>
-                <option value="18"/>18人</option>
-                <option value="19"/>19人</option>
-                <option value="20"/>20人</option>
-                
-                <input type="button" id="buttonId" value="決定" onClick="set()">
-            </select>
+        <form name="numberOfPersonsForm" class="button-radio">
+            <script>
+                for(var i=1; i<=30; i++){
+                    document.write(`<input id="bar${i}" type="radio" name="foo" value="${i}" >
+                                    <label for="bar${i}">${i}</label>`)
+                }
+            </script>
+            <input type="button" id="buttonId" value="決定" onClick="set()">
         </form>
     </div>
-    
 </body>
 </html>

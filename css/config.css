@@ -8,15 +8,21 @@ body{
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
-	left: 0px;
+	left: -200px;
 	margin: auto;
 
 	width: 128px;
-	height: 64px;
+    height: 64px;
+    text-align: center;
 }
 
 #send{
     font-size: 30px;
+    padding:20px;
+    margin:10px;
+    position: relative;
+    left:120px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 [name=templateTextbox]{

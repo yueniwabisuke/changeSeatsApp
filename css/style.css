@@ -2,22 +2,14 @@ body{
 	background-color: antiquewhite;
 }
 
-#numberOfPersons{
-	font-weight: bold;
-	font-size: 30px;
-}
-
-#drop{
-	font-weight: bold;
-	font-size: 30px;
-}
-
 #buttonId{
 	font-weight: bold;
 	font-size: 30px;
 }
 
 #numberOfPersons{
+	font-weight: bold;
+	font-size: 30px;
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -25,22 +17,32 @@ body{
 	left: 0px;
 	margin: auto;
 
-	width: 128px;
+	width: 600px;
 	height: 64px;
+	text-align: center;
 }
 
-.btn-square {
-	display: inline-block;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	background: #668ad8;/*ボタン色*/
-	color: #FFF;
-	border-bottom: solid 4px #627295;
-	border-radius: 3px;
+  .person{
+	text-align: center;
   }
-  .btn-square:active {
-	/*ボタンを押したとき*/
-	-webkit-transform: translateY(4px);
-	transform: translateY(4px);/*下に動く*/
-	border-bottom: none;/*線を消す*/
+
+  .button-radio input[type="radio"] {
+	display:none; 
+
   }
+  
+  .button-radio label {
+	display:inline-block;
+	color:#fff;
+	background-color:#869198;
+	padding:10px 30px;
+	margin:10px;
+	font-size:30px;
+	width:30px;
+	text-align: center;
+  }
+  
+  .button-radio input[type="radio"]:checked + label { 
+	background-color:deepskyblue;
+  }
+  
