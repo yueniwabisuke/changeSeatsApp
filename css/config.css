@@ -6,7 +6,10 @@ body{
     font-size: 30px;
     position: absolute;
 	top: 0px;
-	
+	right: 0px;
+	bottom: 0px;
+	left: -200px;
+	margin: auto;
 
     width: 200px;
     height: 200px;
