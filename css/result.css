@@ -13,7 +13,9 @@ body {
 }
 /* ボタンのスタイル */
 .button {
-  width: 10%;
+  width: 20%;
+  height: 20%;
+  font-size: 200%;
   position: relative;
   top:-20px;
   left: 30px;
@@ -90,4 +92,6 @@ body {
   text-align : center ;
   width: 500px;
   position: relative;
+  height: 10%;
+  
   }
