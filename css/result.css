@@ -15,9 +15,8 @@ body {
 .button {
   width: 20%;
   height: 20%;
-  font-size: 200%;
+  font-size: 150%;
   position: relative;
-  top:-20px;
   left: 30px;
   border: 1px solid gray;
   border-radius: 5px;
@@ -93,5 +92,5 @@ body {
   width: 500px;
   position: relative;
   height: 10%;
-  
+  top: 10%;
   }
