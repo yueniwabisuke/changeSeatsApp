@@ -5,7 +5,7 @@ body{
 .form{
     font-size: 30px;
     position: absolute;
-	top: 0px;
+	top: -100px;
 	right: 0px;
 	bottom: 0px;
 	left: -200px;
@@ -23,11 +23,14 @@ body{
     margin:10px;
     position: relative;
     left:120px;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 10px;
+    background-color: #bdc3c7;
 }
 
 [name=templateTextbox]{
     height: 30px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .sample{
@@ -101,7 +104,4 @@ body{
     margin-left:auto;
     border-radius: 0px 3px 3px 0px;
 
-}
-
-.displayArea{
 }
