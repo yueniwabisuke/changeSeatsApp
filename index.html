@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
 <script>
         //変数storageにsessionStorageを格納
         var storage = localStorage;
@@ -28,8 +30,13 @@
 <title>configuration</title>
 </head>
 <body>
+    <div id="title">
+        Change Seats App
+    </div>
     <div id='numberOfPersons'>
-        人数
+        <div id ="font">
+                people
+        </div>
         <form name="numberOfPersonsForm" class="button-radio">
             <script>
                 for(var i=1; i<=30; i++){
@@ -38,7 +45,7 @@
                 }
             </script>
         </form>
-        <input type="button" id="buttonId" value="決定" onClick="set()">
+        <input type="button" id="buttonId" value="decision" onClick="set()">
 
     </div>
 </body>

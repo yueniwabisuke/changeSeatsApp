@@ -37,12 +37,23 @@ body{
 	background-color:#869198;
 	padding:20px 60px;
 	margin:10px;
-	font-size:60px;
+	font-size:50px;
 	width:60px;
 	text-align: center;
+	border-radius: 100px;
   }
   
   .button-radio input[type="radio"]:checked + label { 
 	background-color:deepskyblue;
   }
-  
+	
+	#title{
+		text-align: center;
+		font-size: 200px;
+		font-family: 'Corben', cursive;
+	}
+
+	#font{
+		font-family: 'Corben', cursive;
+		font-size: 100px;
+	}

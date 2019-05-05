@@ -46,14 +46,14 @@ body{
 }
 
 .sample .switch-on{
-    font-size:30px;
+    font-size:20px;
     padding: 5px;
     text-align: center;
     
 }
 
 .sample .switch-off{
-    font-size:30px;
+    font-size:20px;
     padding: 5px;
     text-align: center;
 }
