@@ -49,12 +49,13 @@ body{
 	
 	#title{
 		text-align: center;
-		font-size: 150px;
+		font-size: 100px;
+		transform   : scale(0.8, 1.8);
 		font-family: 'Noto Sans JP', sans-serif;
 	}
 
 	#font{
 		font-family: 'Noto Sans JP', sans-serif;
 
-		font-size: 100px;
+		font-size: 60px;
 	}
