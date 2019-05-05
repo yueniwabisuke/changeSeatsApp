@@ -49,11 +49,12 @@ body{
 	
 	#title{
 		text-align: center;
-		font-size: 200px;
-		font-family: 'Corben', cursive;
+		font-size: 150px;
+		font-family: 'Noto Sans JP', sans-serif;
 	}
 
 	#font{
-		font-family: 'Corben', cursive;
+		font-family: 'Noto Sans JP', sans-serif;
+
 		font-size: 100px;
 	}

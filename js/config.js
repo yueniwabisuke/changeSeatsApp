@@ -21,6 +21,7 @@ $(function(){
             .appendTo("div#displayArea");
         
         // ID番号加算
+
         idNo++;
     }
     //ひな型を非表示にする

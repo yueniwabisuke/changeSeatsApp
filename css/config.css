@@ -58,6 +58,7 @@ body{
     text-align: center;
 }
 
+
 .sample label{
     display: block;
     float: left;
@@ -73,14 +74,14 @@ body{
 }
 
 .sample label:first-of-type{
-    border-radius: 3px 0 0 3px;
+    border-radius: 10px 0 0 10px;
     position:absolute;
     left:200px;
 
 }
 
 .sample label:last-of-type{
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 10px 10px 0;
     position:absolute;
     left:300px;
 
@@ -93,7 +94,7 @@ body{
     width: 100px;
     margin-right:auto; 
     margin-left:auto;
-    border-radius: 3px 0 0 3px;
+    border-radius: 10px 0 0 10px;
 
 }
 
@@ -104,6 +105,17 @@ body{
     display:block;
     margin-right:auto; 
     margin-left:auto;
-    border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 10px 10px 0px;
 
+}
+
+.namesex{
+    display: inline-block;
+}
+
+#sex{
+    position: absolute;
+    top: 0px;
+    right:-125px;
+    
 }
