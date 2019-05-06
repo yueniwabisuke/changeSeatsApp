@@ -56,7 +56,7 @@ body{
 		font-family: 'Noto Sans JP', sans-serif;
 	}
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
 
 	#buttonId{
 		font-weight: bold;

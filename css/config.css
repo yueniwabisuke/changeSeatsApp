@@ -108,7 +108,7 @@ body{
     
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .form{
         font-size: 30px;
         position: absolute;
