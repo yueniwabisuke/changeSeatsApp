@@ -5,12 +5,12 @@ body{
 
 #buttonId{
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 30px;
 }
 
 #numberOfPersons{
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 30px;
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -18,7 +18,7 @@ body{
 	left: 0px;
 	margin: auto;
 
-	width: 1200px;
+	width: 600px;
 	height: 64px;
 	text-align: center;
 }
@@ -36,30 +36,25 @@ body{
 	display:inline-block;
 	color:#fff;
 	background-color:#869198;
-	padding:20px 60px;
+	padding:10px 30px;
 	margin:10px;
-	font-size:50px;
-	width:60px;
+	font-size:30px;
+	width:30px;
 	text-align: center;
-	border-radius: 100px;
   }
   
   .button-radio input[type="radio"]:checked + label { 
 	background-color:deepskyblue;
   }
-	
-	#title{
+  #title{
+		position: relative;
+		top:60px;
+		left:20px;
 		text-align: center;
 		font-size: 100px;
+		transform   : scale(0.8, 1.8);
 		font-family: 'Noto Sans JP', sans-serif;
 	}
-
-	#font{
-		font-family: 'Noto Sans JP', sans-serif;
-
-		font-size: 100px;
-	}
-
 
 @media screen and (max-width: 480px){
 

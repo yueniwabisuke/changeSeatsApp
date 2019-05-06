@@ -11,10 +11,9 @@ body{
 	left: -200px;
 	margin: auto;
 
-    width: 200px;
-    height: 200px;
+	width: 128px;
+    height: 64px;
     text-align: center;
-    zoom: 200%;
 }
 
 #send{
@@ -23,16 +22,11 @@ body{
     margin:10px;
     position: relative;
     left:120px;
-    border-radius: 10px;
-    background-color: #bdc3c7;
+    border-radius: 3px 3px 3px 3px;
 }
 
 [name=templateTextbox]{
     height: 30px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 25px;
-    width: 150px;
 }
 
 .sample{
@@ -46,18 +40,17 @@ body{
 }
 
 .sample .switch-on{
-    font-size:20px;
+    font-size:30px;
     padding: 5px;
     text-align: center;
     
 }
 
 .sample .switch-off{
-    font-size:20px;
+    font-size:30px;
     padding: 5px;
     text-align: center;
 }
-
 
 .sample label{
     display: block;
@@ -74,14 +67,14 @@ body{
 }
 
 .sample label:first-of-type{
-    border-radius: 10px 0 0 10px;
+    border-radius: 3px 0 0 3px;
     position:absolute;
     left:200px;
 
 }
 
 .sample label:last-of-type{
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 3px 3px 0;
     position:absolute;
     left:300px;
 
@@ -94,7 +87,7 @@ body{
     width: 100px;
     margin-right:auto; 
     margin-left:auto;
-    border-radius: 10px 0 0 10px;
+    border-radius: 3px 0 0 3px;
 
 }
 
@@ -105,17 +98,132 @@ body{
     display:block;
     margin-right:auto; 
     margin-left:auto;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 3px 3px 0px;
 
 }
-
-.namesex{
-    display: inline-block;
-}
-
 #sex{
     position: absolute;
     top: 0px;
     right:-125px;
     
+}
+
+@media screen and (max-width: 480px){
+    .form{
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: -200px;
+        margin: auto;
+
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        zoom: 200%;
+    }
+
+    #send{
+        font-size: 30px;
+        padding:20px;
+        margin:10px;
+        position: relative;
+        left:120px;
+        border-radius: 10px;
+        background-color: #bdc3c7;
+    }
+
+    [name=templateTextbox]{
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        width: 150px;
+    }
+
+    .sample{
+        position: relative;
+        top:-37px;
+    }
+
+    .sample input {
+        display: none;
+
+    }
+
+    .sample .switch-on{
+        font-size:20px;
+        padding: 5px;
+        text-align: center;
+        
+    }
+
+    .sample .switch-off{
+        font-size:20px;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+    .sample label{
+        display: block;
+        float: left;
+        cursor: pointer;
+        width: 100px;
+        background: #bdc3c7;
+        color: #869198;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1;
+        transition: .2s;
+        
+    }
+
+    .sample label:first-of-type{
+        border-radius: 10px 0 0 10px;
+        position:absolute;
+        left:200px;
+
+    }
+
+    .sample label:last-of-type{
+        border-radius: 0 10px 10px 0;
+        position:absolute;
+        left:300px;
+
+    }
+
+    .sample input[type="radio"]:checked + .switch-on {
+        background-color: deepskyblue;
+        color: #fff;
+        display: block;
+        width: 100px;
+        margin-right:auto; 
+        margin-left:auto;
+        border-radius: 10px 0 0 10px;
+
+    }
+
+    .sample input[type="radio"]:checked + .switch-off {
+        background-color: violet;
+        color: #fff;
+        width: 90px;
+        display:block;
+        margin-right:auto; 
+        margin-left:auto;
+        border-radius: 0px 10px 10px 0px;
+
+    }
+
+    .namesex{
+        display: inline-block;
+    }
+
+    #sex{
+        position: absolute;
+        top: 0px;
+        right:-125px;
+        
+    }
 }
