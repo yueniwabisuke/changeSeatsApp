@@ -2,112 +2,6 @@ body{
 	background-color: antiquewhite;
 }
 
-.form{
-    font-size: 30px;
-    position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: -200px;
-	margin: auto;
-
-	width: 128px;
-    height: 64px;
-    text-align: center;
-}
-
-#send{
-    font-size: 30px;
-    padding:20px;
-    margin:10px;
-    position: relative;
-    left:120px;
-    border-radius: 3px 3px 3px 3px;
-}
-
-[name=templateTextbox]{
-    height: 30px;
-}
-
-.sample{
-    position: relative;
-    top:-37px;
-}
-
-.sample input {
-    display: none;
-
-}
-
-.sample .switch-on{
-    font-size:30px;
-    padding: 5px;
-    text-align: center;
-    
-}
-
-.sample .switch-off{
-    font-size:30px;
-    padding: 5px;
-    text-align: center;
-}
-
-.sample label{
-    display: block;
-    float: left;
-    cursor: pointer;
-    width: 100px;
-    background: #bdc3c7;
-    color: #869198;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1;
-    transition: .2s;
-    
-}
-
-.sample label:first-of-type{
-    border-radius: 3px 0 0 3px;
-    position:absolute;
-    left:200px;
-
-}
-
-.sample label:last-of-type{
-    border-radius: 0 3px 3px 0;
-    position:absolute;
-    left:300px;
-
-}
-
-.sample input[type="radio"]:checked + .switch-on {
-    background-color: deepskyblue;
-    color: #fff;
-    display: block;
-    width: 100px;
-    margin-right:auto; 
-    margin-left:auto;
-    border-radius: 3px 0 0 3px;
-
-}
-
-.sample input[type="radio"]:checked + .switch-off {
-    background-color: violet;
-    color: #fff;
-    width: 90px;
-    display:block;
-    margin-right:auto; 
-    margin-left:auto;
-    border-radius: 0px 3px 3px 0px;
-
-}
-#sex{
-    position: absolute;
-    top: 0px;
-    right:-125px;
-    
-}
-
 @media screen and (max-width: 600px){
     .form{
         font-size: 30px;
@@ -220,6 +114,114 @@ body{
         display: inline-block;
     }
 
+    #sex{
+        position: absolute;
+        top: 0px;
+        right:-125px;
+        
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .form{
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: -200px;
+        margin: auto;
+
+        width: 128px;
+        height: 64px;
+        text-align: center;
+    }
+
+    #send{
+        font-size: 30px;
+        padding:20px;
+        margin:10px;
+        position: relative;
+        left:120px;
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    [name=templateTextbox]{
+        height: 30px;
+    }
+
+    .sample{
+        position: relative;
+        top:-37px;
+    }
+
+    .sample input {
+        display: none;
+
+    }
+
+    .sample .switch-on{
+        font-size:30px;
+        padding: 5px;
+        text-align: center;
+        
+    }
+
+    .sample .switch-off{
+        font-size:30px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .sample label{
+        display: block;
+        float: left;
+        cursor: pointer;
+        width: 100px;
+        background: #bdc3c7;
+        color: #869198;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1;
+        transition: .2s;
+        
+    }
+
+    .sample label:first-of-type{
+        border-radius: 3px 0 0 3px;
+        position:absolute;
+        left:200px;
+
+    }
+
+    .sample label:last-of-type{
+        border-radius: 0 3px 3px 0;
+        position:absolute;
+        left:300px;
+
+    }
+
+    .sample input[type="radio"]:checked + .switch-on {
+        background-color: deepskyblue;
+        color: #fff;
+        display: block;
+        width: 100px;
+        margin-right:auto; 
+        margin-left:auto;
+        border-radius: 3px 0 0 3px;
+
+    }
+
+    .sample input[type="radio"]:checked + .switch-off {
+        background-color: violet;
+        color: #fff;
+        width: 90px;
+        display:block;
+        margin-right:auto; 
+        margin-left:auto;
+        border-radius: 0px 3px 3px 0px;
+
+    }
     #sex{
         position: absolute;
         top: 0px;
