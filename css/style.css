@@ -68,7 +68,7 @@ body{
 		font-weight: bold;
 		font-size: 60px;
 		position: absolute;
-		top: -400px;
+		top: -500px;
 		right: 0px;
 		bottom: 0px;
 		left: -20px;
@@ -92,10 +92,10 @@ body{
 		display:inline-block;
 		color:#fff;
 		background-color:#869198;
-		padding:20px 60px;
+		padding:10px 30px;
 		margin:10px;
-		font-size:50px;
-		width:50px;
+		font-size:30px;
+		width:30px;
 		text-align: center;
 		border-radius: 100px;
 		}
@@ -107,7 +107,7 @@ body{
 		#title{
 			position: relative;
 			top:100px;
-			left:50px;
+			left:30px;
 			text-align: center;
 			font-size: 100px;
 			transform   : scale(0.8, 1.8);
