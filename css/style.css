@@ -56,68 +56,68 @@ body{
 		transform   : scale(0.8, 1.8);
 		font-family: 'Noto Sans JP', sans-serif;
 	}
-	
-	@media screen and (max-width: 600px){
 
-		#buttonId{
-			font-weight: bold;
-			font-size: 60px;
-		}
-	
-		#numberOfPersons{
-			font-weight: bold;
-			font-size: 60px;
-			position: absolute;
-			top: -100px;
-			right: 0px;
-			bottom: 0px;
-			left: 0px;
-			margin: auto;
-	
-			width: 1200px;
-			height: 64px;
-			text-align: center;
-		}
-	
-			.person{
-			text-align: center;
-			}
-	
-			.button-radio input[type="radio"] {
-			display:none; 
-	
-			}
-			
-			.button-radio label {
-			display:inline-block;
-			color:#fff;
-			background-color:#869198;
-			padding:20px 60px;
-			margin:10px;
-			font-size:50px;
-			width:60px;
-			text-align: center;
-			border-radius: 100px;
-			}
-			
-			.button-radio input[type="radio"]:checked + label { 
-			background-color:deepskyblue;
-			}
-			
-			#title{
-				position: relative;
-				top:200px;
-				left:100px;
-				text-align: center;
-				font-size: 100px;
-				transform   : scale(0.8, 1.8);
-				font-family: 'Noto Sans JP', sans-serif;
-			}
-	
-			#font{
-				font-family: 'Noto Sans JP', sans-serif;
-	
-				font-size: 60px;
-			}
+@media screen and (max-width: 1000px){
+
+	#buttonId{
+		font-weight: bold;
+		font-size: 60px;
 	}
-	
+
+	#numberOfPersons{
+		font-weight: bold;
+		font-size: 60px;
+		position: absolute;
+		top: -100px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		margin: auto;
+
+		width: 1200px;
+		height: 64px;
+		text-align: center;
+	}
+
+		.person{
+		text-align: center;
+		}
+
+		.button-radio input[type="radio"] {
+		display:none; 
+
+		}
+		
+		.button-radio label {
+		display:inline-block;
+		color:#fff;
+		background-color:#869198;
+		padding:20px 60px;
+		margin:10px;
+		font-size:50px;
+		width:60px;
+		text-align: center;
+		border-radius: 100px;
+		}
+		
+		.button-radio input[type="radio"]:checked + label { 
+		background-color:deepskyblue;
+		}
+		
+		#title{
+			position: relative;
+			top:200px;
+			left:100px;
+			text-align: center;
+			font-size: 100px;
+			transform   : scale(0.8, 1.8);
+			font-family: 'Noto Sans JP', sans-serif;
+		}
+
+		#font{
+			font-family: 'Noto Sans JP', sans-serif;
+
+			font-size: 60px;
+		}
+}
+
