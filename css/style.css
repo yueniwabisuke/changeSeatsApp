@@ -68,10 +68,10 @@ body{
 		font-weight: bold;
 		font-size: 60px;
 		position: absolute;
-		top: -150px;
+		top: -300px;
 		right: 0px;
 		bottom: 0px;
-		left: 0px;
+		left: -20px;
 		margin: auto;
 
 		width: 1000px;
